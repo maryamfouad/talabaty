@@ -165,11 +165,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-           /* Container(
-              width: 800,
-              child: ListView(
-                scrollDirection: Axis.vertical,
-                children: [
+
                   cards("images/burgarat.jpg", "برجرات", "الحد الادنى للطلب : 5000",
                       "المنصور", "ممتاز", "سعر التوصيل : 2500"),
                   cards("images/chilli.jpg", "تشيللي هاوس", "الحد الادنى للطلب : 5000",
@@ -181,9 +177,7 @@ class _HomePageState extends State<HomePage> {
                   cards("images/abu.png", "ابو العبد", "الحد الادنى للطلب : 5000",
                       "المنصور", "ممتاز", "سعر التوصيل : 2500"),
 
-                ],
-              ),
-            ), */
+
 
 
       ])),
@@ -244,18 +238,18 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            width: 800,
-            height: 600,
+            width: 400,
+            height: 200,
            // margin: EdgeInsets.all(15),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               image: DecorationImage(
                 image: AssetImage("$img"),
-                fit: BoxFit.fill
+                fit: BoxFit.cover
               )
             ),
           ),
-          Padding(padding: EdgeInsets.only(bottom: 13)),
+          Padding(padding: EdgeInsets.only(bottom: 13 ,  )),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -267,7 +261,7 @@ class _HomePageState extends State<HomePage> {
               fontSize: 15),),
             ],
           ),
-          Padding(padding: EdgeInsets.only(bottom: 13)),
+          Padding(padding: EdgeInsets.only(bottom: 13 , )),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
